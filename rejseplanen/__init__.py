@@ -1,0 +1,1 @@
+from rejseplanen.methods import departureBoard
