@@ -153,7 +153,6 @@ def trip(origin, destination, viaId=None, time=None, searchForArrival=None, useT
             else:
                 raise TypeError("Expected <class 'int'>, got {}.".format(type(maxWalkingDistanceDest)))  
 
-    print(params)
     response = _request('trip', params, timeout)
 
     result = response['TripList']
@@ -247,10 +246,8 @@ def multiDepartureBoard(*ids, **args):
         else:
             raise ValueError("Unknown argument '{}'.".format(key))
     
-    print(params)
     response = _request('multiDepartureBoard', params, timeout=10)
 
-    print(response)
     result = response['MultiDepartureBoard']
 
     if 'error' in result:
