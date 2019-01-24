@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 from setuptools import setup
 setup(
-  name = 'rejseplanen',
-  packages = ['rejseplanen'],
-  version = '0.2',
+  name = 'rjpl',
+  packages = ['rjpl'],
+  version = '0.3',
   license='MIT',
   description = 'Interface with Rejseplanen API',
   author = 'Thomas Passer Jensen',
   author_email = 'tomatpasser@gmail.com',
   url = 'https://github.com/tomatpasser/python-rejseplanen',
-  download_url = 'https://github.com/tomatpasser/python-rejseplanen/archive/v0.2.tar.gz',
+  download_url = 'https://github.com/tomatpasser/python-rejseplanen/archive/v0.3.tar.gz',
   keywords = ['transport', 'rejseplanen', 'timetable', 'journey', 'public transport'],
   install_requires=[
           'requests>=2.9.1',
