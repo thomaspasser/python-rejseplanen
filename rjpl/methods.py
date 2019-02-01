@@ -14,7 +14,11 @@ from .constants import *
 def _request(service, params, timeout):
     params['format'] = 'json'
     
-    response = requests.get(RESOURCE+service, params, timeout=timeout)
+
+    try:
+        response = requests.get(RESOURCE+service, params, timeout=timeout)
+    except requests.exceptions.RequestException as e:
+        raise RuntimeError(e)
 
     if response.status_code == 200:
         return response.json()
