@@ -1,11 +1,11 @@
 ## Installation
 
-```pip install rejseplanen```
+```pip install rjpl```
 
 ## Module usage
 
 ```
-import rejseplanen
+import rjpl
 
-print(rejseplanen.departureBoard(2158))
+print(rjpl.departureBoard(2158))
 ```
