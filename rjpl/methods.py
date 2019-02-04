@@ -27,6 +27,18 @@ def _request(service, params, timeout):
                 str(response.content))
 
 def location(input, timeout=5):
+    """ Perform a pattern matching of user input.
+
+    Args:
+        input (str): The search input.
+        timeout (int): Timeout time of requests.get() call in seconds.
+
+    Returns:
+        Dictionary object.
+        Keys:
+            'StopLocation':  List of dictionaries of stop locations with coordinates.
+            'CoordLocation': List of dictionaries of named points of interests with coordinates.
+    """
     params = {}
 
     if isinstance(input, str):
@@ -46,6 +58,31 @@ def location(input, timeout=5):
 def trip(origin, destination, viaId=None, time=None, searchForArrival=None, useTrain=True, 
          useBus=True, useMetro=True, useBicycle=False, maxWalkingDistanceDep=None, 
          maxWalkingDistanceDest=None, maxCyclingDistanceDep=None, maxCyclingDistanceDest=None, timeout=10):
+    """ Calculates trip from specified origin to specified destination. 
+
+    Args:
+        origin (rjpl.Coord or rjpl.Stop): Trip origin.
+        destination (rjpl.Coord or rjpl.Stop): Trip destination.
+        viaId (int): Id of stop to force the trip through.
+        time (datetime): Departure date and time of the trip. (default: current server time)
+        searchForArrival (bool): If true, time will be used for arrival time instead. (default: False)
+        useTrain (bool): Whether to travel by train (default: True)
+        useBus (bool): Whether to travel by bus (default: True)
+        useMetro (bool): Whether to travel by metro (default: True)
+        useBicycle (bool): Restrict to trips which allow carriage of bicycles. (default: False)
+        timeout (int): Timeout time of requests.get() call in seconds.
+
+    Extra args if useBicycle=False:
+        maxWalkingDistanceDep (int): The max walking distance from start location to the first mode of transportation.
+        maxWalkingDistanceDest (int): The max walking distance from last mode of transportation to the destination.
+
+    Extra args if useBicycle=True
+        maxCyclingDistanceDep (int): The max biking distance from start location to the first mode of public transportation.
+        maxCyclingDistanceDest (int): The max biking distance from the last mode of public transportation to the destination.
+
+    Returns:
+        List of possible trips from origin to destination. The trips are given as dictonaries, with a list of legs.
+    """
     params = {}
 
     if isinstance(origin, Place):
@@ -62,7 +99,7 @@ def trip(origin, destination, viaId=None, time=None, searchForArrival=None, useT
 
     if isinstance(destination, Place):
         if isinstance(destination, Stop):
-            params['destId'] = destination.id
+            params['destId'] = destination.stop_id
         elif isinstance(destination, Coord):
             params['destCoordX'] = int(COORDINATE_MULTIPLIER*destination.coordX)
             params['destCoordY'] = int(COORDINATE_MULTIPLIER*destination.coordY)
@@ -167,6 +204,20 @@ def trip(origin, destination, viaId=None, time=None, searchForArrival=None, useT
 
 
 def departureBoard(stop_id, useTrain=True, useBus=True, useMetro=True, time=None, offset=None, timeout=10):
+    """ Retrieve a station departure board.
+
+    Args:
+        stop_id (int): The station id. Can be retrieved with the location() call.
+        useTrain (bool): Whether to travel by train (default: True)
+        useBus (bool): Whether to travel by bus (default: True)
+        useMetro (bool): Whether to travel by metro (default: True)
+        time (datetime): Departure date and time of the trip. (default: current server time)
+        offset (int): Search a number of minutes into the future. Use either time or offset.
+        timeout (int): Timeout time of requests.get() call in seconds.
+
+    Returns:
+        A list of dictionaries, each containing departure name, time, direction and type.
+    """
     params = {}
 
     if type(stop_id) is int:
@@ -217,10 +268,27 @@ def departureBoard(stop_id, useTrain=True, useBus=True, useMetro=True, time=None
 
 
 def multiDepartureBoard(*ids, **args):
+    """ Retrieve multiple station departure boards at once.
+
+     Args:
+        *args: Variable length argument list: The stop ids.
+        **kwargs: Keyword arguments:
+            useTrain (bool): Whether to travel by train (default: True)
+            useBus (bool): Whether to travel by bus (default: True)
+            useMetro (bool): Whether to travel by metro (default: True)
+            time (datetime): Departure date and time of the trip. (default: current server time)
+            timeout (int): Timeout time of requests.get() call in seconds.
+
+    Returns:
+        A list of dictionaries, each containing departure name, time, direction and type.
+        The results from all stops are mixed, but can be filtered by stop.
+    """
+
     if len(ids) < 1:
         raise ValueError("Need at least one id.")
 
     params = {'id{}'.format(i+1): ids[i] for i in range(len(ids))}
+    timeout = 10
 
     for key in args.keys():
         if key == 'time':
@@ -247,10 +315,17 @@ def multiDepartureBoard(*ids, **args):
                 params['useMetro'] = int(args['useMetro'])
             else:
                 raise TypeError("Expected <class 'bool'>, got {}.".format(type(args['useMetro'])))
+
+        elif key == 'timeout':
+            if isinstance(args['timeout'], int):
+                timeout=args['timeout']
+            else:
+                raise TypeError("Expected <class 'int'>, got {}.".format(type(args['timeout'])))
+        
         else:
             raise ValueError("Unknown argument '{}'.".format(key))
     
-    response = _request('multiDepartureBoard', params, timeout=10)
+    response = _request('multiDepartureBoard', params, timeout=timeout)
 
     result = response['MultiDepartureBoard']
 
@@ -260,6 +335,18 @@ def multiDepartureBoard(*ids, **args):
     return result['Departure']
 
 def stopsNearby(coordX, coordY, maxRadius=None, maxNumber=None, timeout=5):
+    """ Finds stops close to given coordinates.
+
+    Args:
+        coordX (float): Longitude.
+        coordY (float): Latitude.
+        maxRadius (int): The radius in meters to search within.
+        maxNumber (int): The number of results to return.
+        timeout (int): Timeout time of requests.get() call in seconds.
+
+    Returns:
+        A list of nearby stops where each stop is a dictionary.
+    """
     params = {}
     if isinstance(coordX, float):
         params['coordX'] = int(COORDINATE_MULTIPLIER*coordX)
@@ -277,12 +364,17 @@ def stopsNearby(coordX, coordY, maxRadius=None, maxNumber=None, timeout=5):
         else:
             raise TypeError("Expected <class 'int'>, got {}.".format(type(coordX)))
 
+    if maxNumber is not None:
+        if isinstance(maxNumber, int):
+            params['maxNumber'] = maxNumber
+        else:
+            raise TypeError("Expected <class 'int'>, got {}.".format(type(coordX)))
+
     response = _request('stopsNearby', params, timeout)
 
     result = response['LocationList']
     if 'error' in result:
         raise RuntimeError(result['error'])
-
     return result['StopLocation']
 
 

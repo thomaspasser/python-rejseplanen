@@ -2,6 +2,14 @@
 
 ```pip install rjpl```
 
+## Functions
+
+- location
+- trip
+- departureBoard
+- multiDepartureBoard
+- stopsNearby
+
 ## Module usage
 
 ```
