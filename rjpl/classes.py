@@ -19,3 +19,16 @@ class Stop(Place):
             self.stop_id = stop_id
         else:
             raise TypeError("Expected <class 'int'> got {}.".format(type(stop_id)))
+
+
+class APIError(Exception):
+    """Raised when the API returned an error."""
+    pass
+
+class ConnectionError(Exception):
+    """Raised in the event of a network problem."""
+    pass
+
+class HTTPError(Exception):
+    """Raised when the HTTP response code is not 200."""
+    pass

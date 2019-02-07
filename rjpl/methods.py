@@ -8,22 +8,21 @@ https://help.rejseplanen.dk/hc/en-us/articles/214174465-Rejseplanen-s-API
 from datetime import datetime
 import requests
 
-from .classes import Place, Stop, Coord
+from .classes import *
 from .constants import *
 
 def _request(service, params, timeout):
     params['format'] = 'json'
     
-
     try:
         response = requests.get(RESOURCE+service, params, timeout=timeout)
     except requests.exceptions.RequestException as e:
-        raise RuntimeError(e)
+        raise ConnectionError(e)
 
     if response.status_code == 200:
         return response.json()
     else:
-        raise RuntimeError('Error: ' + str(response.status_code) +
+        raise HTTPError('Error: ' + str(response.status_code) +
                 str(response.content))
 
 def location(input, timeout=5):
@@ -51,7 +50,7 @@ def location(input, timeout=5):
     result = response['LocationList']
 
     if 'error' in result:
-        raise RuntimeError(result['error'])
+        raise APIError(result['error'])
 
     return result
 
@@ -198,7 +197,7 @@ def trip(origin, destination, viaId=None, time=None, searchForArrival=None, useT
 
     result = response['TripList']
     if 'error' in result:
-        raise RuntimeError(result['error'])
+        raise APIError(result['error'])
 
     return result['Trip']
 
@@ -262,7 +261,7 @@ def departureBoard(stop_id, useTrain=True, useBus=True, useMetro=True, time=None
 
     # This key is present on error
     if 'error' in result:
-        raise RuntimeError(result['error'])
+        raise APIError(result['error'])
 
     return result['Departure']
 
@@ -330,7 +329,7 @@ def multiDepartureBoard(*ids, **args):
     result = response['MultiDepartureBoard']
 
     if 'error' in result:
-        raise RuntimeError(result['error'])
+        raise APIError(result['error'])
 
     return result['Departure']
 
@@ -374,7 +373,7 @@ def stopsNearby(coordX, coordY, maxRadius=None, maxNumber=None, timeout=5):
 
     result = response['LocationList']
     if 'error' in result:
-        raise RuntimeError(result['error'])
+        raise APIError(result['error'])
     return result['StopLocation']
 
 
