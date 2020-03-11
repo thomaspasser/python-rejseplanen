@@ -21,14 +21,14 @@ class Stop(Place):
             raise TypeError("Expected <class 'int'> got {}.".format(type(stop_id)))
 
 
-class APIError(Exception):
+class rjplAPIError(Exception):
     """Raised when the API returned an error."""
     pass
 
-class ConnectionError(Exception):
+class rjplConnectionError(Exception):
     """Raised in the event of a network problem."""
     pass
 
-class HTTPError(Exception):
+class rjplHTTPError(Exception):
     """Raised when the HTTP response code is not 200."""
     pass

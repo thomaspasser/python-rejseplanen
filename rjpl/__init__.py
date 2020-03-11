@@ -1,2 +1,2 @@
 from rjpl.methods import location, trip, departureBoard, multiDepartureBoard, stopsNearby
-from rjpl.classes import Coord, Stop, ConnectionError, HTTPError, APIError
+from rjpl.classes import Coord, Stop, rjplConnectionError, rjplHTTPError, rjplAPIError
