@@ -374,8 +374,7 @@ def stopsNearby(coordX, coordY, maxRadius=None, maxNumber=None, timeout=5):
     result = response['LocationList']
     if 'error' in result:
         raise rjplAPIError(result['error'])
-    return result['StopLocation']
-
+    return result.get('StopLocation', [])
 
 if __name__ == "__main__":
     pass
