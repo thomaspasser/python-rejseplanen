@@ -1,0 +1,234 @@
+responses:
+- response:
+    auto_calculate_content_length: false
+    body: "{\n\"DepartureBoard\":{\n  \"noNamespaceSchemaLocation\":\"http://webapp.rejseplanen.dk/xml/rest/hafasRestDepartureBoard.xsd\"\
+      ,\n  \"Departure\":[{\n    \"name\":\"B\",\n    \"type\":\"S\",\n    \"stop\"\
+      :\"Carlsberg St.\",\n    \"time\":\"21:21\",\n    \"date\":\"26.03.23\",\n \
+      \   \"id\":\"8600631\",\n    \"line\":\"B\",\n    \"messages\":\"0\",\n    \"\
+      finalStop\":\"Farum St.\",\n    \"direction\":\"Farum St.\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=455622%2F175779%2F666606%2F181432%2F86%3Fdate%3D26.03.23%26station_evaId%3D8600631%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"21:22\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52830\",\n    \"line\":\"1A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"Hellerup St.\",\n    \"direction\"\
+      :\"Hellerup St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=55353%2F30753%2F613374%2F288240%2F86%3Fdate%3D26.03.23%26station_evaId%3D52830%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 9A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"21:22\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52830\",\n    \"line\":\"9A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"R\xF8dovre Centrum (R\xF8dovre Parkvej)\"\
+      ,\n    \"direction\":\"R\xF8dovre Centrum\",\n    \"JourneyDetailRef\":{\n \
+      \     \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=337335%2F132885%2F392586%2F83852%2F86%3Fdate%3D26.03.23%26station_evaId%3D52830%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 23\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"S\xF8nder Boulevard (Enghavevej)\",\n    \"time\":\"21:24\",\n    \"\
+      date\":\"26.03.23\",\n    \"id\":\"45727\",\n    \"line\":\"23\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Klampenborg St. (Dyrehavevej)\",\n    \"direction\"\
+      :\"Klampenborg St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=372963%2F146826%2F206788%2F20929%2F86%3Fdate%3D26.03.23%26station_evaId%3D45727%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 9A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"21:25\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52831\",\n    \"line\":\"9A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"Kgs. Enghave, Valbyparken (Hammelstrupvej)\"\
+      ,\n    \"direction\":\"Kongens Enghave Valbyparken\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=933612%2F331537%2F521688%2F50362%2F86%3Fdate%3D26.03.23%26station_evaId%3D52831%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"B\",\n    \"type\":\"S\",\n    \"stop\":\"\
+      Carlsberg St.\",\n    \"time\":\"21:25\",\n    \"date\":\"26.03.23\",\n    \"\
+      id\":\"8600631\",\n    \"line\":\"B\",\n    \"messages\":\"0\",\n    \"finalStop\"\
+      :\"H\xF8je Taastrup St.\",\n    \"direction\":\"H\xF8je Taastrup St.\",\n  \
+      \  \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=422886%2F164774%2F915266%2F316672%2F86%3Fdate%3D26.03.23%26station_evaId%3D8600631%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"S\xF8nder Boulevard (Enghavevej)\",\n    \"time\":\"21:27\",\n    \"\
+      date\":\"26.03.23\",\n    \"id\":\"45728\",\n    \"line\":\"1A\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Hvidovre Hospital, Sl\xF8jfen (Ketteg\xE5rd All\xE9\
+      )\",\n    \"direction\":\"Hvidovre Hospital\",\n    \"JourneyDetailRef\":{\n\
+      \      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=239184%2F92430%2F869844%2F355200%2F86%3Fdate%3D26.03.23%26station_evaId%3D45728%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 11\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"21:27\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7013\",\n    \"line\":\"11\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"R\xE5dhuspladsen\",\n    \"direction\"\
+      :\"K\xF8benhavns R\xE5dhusplads\",\n    \"JourneyDetailRef\":{\n      \"ref\"\
+      :\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=942474%2F337621%2F156000%2F236161%2F86%3Fdate%3D26.03.23%26station_evaId%3D7013%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 11\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Enghavevej (Ingerslevsgade)\",\n    \"time\":\"21:28\",\n    \"date\"\
+      :\"26.03.23\",\n    \"id\":\"2057\",\n    \"line\":\"11\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Aved\xF8re St.\",\n    \"direction\":\"Aved\xF8\
+      re St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=819471%2F296565%2F180530%2F182899%2F86%3Fdate%3D26.03.23%26station_evaId%3D2057%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"21:29\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7057\",\n    \"line\":\"1A\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"Hvidovre Hospital, Sl\xF8jfen (Ketteg\xE5\
+      rd All\xE9)\",\n    \"direction\":\"Hvidovre Hospital\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=669543%2F235883%2F247092%2F99641%2F86%3Fdate%3D26.03.23%26station_evaId%3D7057%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 11\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"21:30\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7057\",\n    \"line\":\"11\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"Aved\xF8re St.\",\n    \"direction\"\
+      :\"Aved\xF8re St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=427350%2F165858%2F880744%2F297929%2F86%3Fdate%3D26.03.23%26station_evaId%3D7057%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"21:32\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52830\",\n    \"line\":\"1A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"Hellerup St.\",\n    \"direction\"\
+      :\"Hellerup St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=693501%2F243547%2F703698%2F120686%2F86%3Fdate%3D26.03.23%26station_evaId%3D52830%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 9A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"21:32\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52830\",\n    \"line\":\"9A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"Glostrup St.\",\n    \"direction\"\
+      :\"Glostrup St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=177561%2F79543%2F802794%2F342214%2F86%3Fdate%3D26.03.23%26station_evaId%3D52830%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"C\",\n    \"type\":\"S\",\n    \"stop\":\"\
+      Carlsberg St.\",\n    \"time\":\"21:33\",\n    \"date\":\"26.03.23\",\n    \"\
+      id\":\"8600631\",\n    \"line\":\"C\",\n    \"messages\":\"0\",\n    \"finalStop\"\
+      :\"Frederikssund St.\",\n    \"direction\":\"Frederikssund St.\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=905676%2F325905%2F87788%2F258003%2F86%3Fdate%3D26.03.23%26station_evaId%3D8600631%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"C\",\n    \"type\":\"S\",\n    \"stop\":\"\
+      Carlsberg St.\",\n    \"time\":\"21:33\",\n    \"date\":\"26.03.23\",\n    \"\
+      id\":\"8600631\",\n    \"line\":\"C\",\n    \"messages\":\"0\",\n    \"finalStop\"\
+      :\"Klampenborg St.\",\n    \"direction\":\"Klampenborg St.\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=430629%2F167612%2F884548%2F298735%2F86%3Fdate%3D26.03.23%26station_evaId%3D8600631%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 9A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"21:35\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52831\",\n    \"line\":\"9A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"Kgs. Enghave, Valbyparken (Hammelstrupvej)\"\
+      ,\n    \"direction\":\"Kongens Enghave Valbyparken\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=4830%2F21848%2F621206%2F308999%2F86%3Fdate%3D26.03.23%26station_evaId%3D52831%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 23\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"S\xF8nder Boulevard (Enghavevej)\",\n    \"time\":\"21:35\",\n    \"\
+      date\":\"26.03.23\",\n    \"id\":\"45728\",\n    \"line\":\"23\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Valby St., Lysh\xF8jg\xE5rdsvej (Lysh\xF8jg\xE5\
+      rdsvej)\",\n    \"direction\":\"Valby St.\",\n    \"JourneyDetailRef\":{\n \
+      \     \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=320574%2F129421%2F403102%2F94695%2F86%3Fdate%3D26.03.23%26station_evaId%3D45728%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"S\xF8nder Boulevard (Enghavevej)\",\n    \"time\":\"21:37\",\n    \"\
+      date\":\"26.03.23\",\n    \"id\":\"45728\",\n    \"line\":\"1A\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Aved\xF8re St.\",\n    \"direction\":\"Aved\xF8\
+      re St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=386199%2F141514%2F800516%2F271532%2F86%3Fdate%3D26.03.23%26station_evaId%3D45728%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"21:39\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7057\",\n    \"line\":\"1A\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"Aved\xF8re St.\",\n    \"direction\"\
+      :\"Aved\xF8re St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=690900%2F243081%2F509916%2F24665%2F86%3Fdate%3D26.03.23%26station_evaId%3D7057%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"B\",\n    \"type\":\"S\",\n    \"stop\":\"\
+      Carlsberg St.\",\n    \"time\":\"21:41\",\n    \"date\":\"26.03.23\",\n    \"\
+      id\":\"8600631\",\n    \"line\":\"B\",\n    \"messages\":\"0\",\n    \"finalStop\"\
+      :\"Farum St.\",\n    \"direction\":\"Farum St.\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=505572%2F192429%2F778788%2F220874%2F86%3Fdate%3D26.03.23%26station_evaId%3D8600631%26%26format%3Djson\"\
+      \n      }\n    }]\n  }\n}"
+    content_type: text/plain; charset=utf-8
+    method: GET
+    status: 200
+    url: http://xmlopen.rejseplanen.dk/bin/rest.exe/departureBoard?id=8600631&useTog=1&useBus=1&useMetro=1&format=json
+- response:
+    auto_calculate_content_length: false
+    body: "{\n\"DepartureBoard\":{\n  \"noNamespaceSchemaLocation\":\"http://webapp.rejseplanen.dk/xml/rest/hafasRestDepartureBoard.xsd\"\
+      ,\n  \"Departure\":[{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n   \
+      \ \"stop\":\"S\xF8nder Boulevard (Enghavevej)\",\n    \"time\":\"21:47\",\n\
+      \    \"date\":\"26.03.23\",\n    \"id\":\"45728\",\n    \"line\":\"1A\",\n \
+      \   \"messages\":\"0\",\n    \"finalStop\":\"Hvidovre Hospital, Sl\xF8jfen (Ketteg\xE5\
+      rd All\xE9)\",\n    \"direction\":\"Hvidovre Hospital\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=386475%2F141527%2F709592%2F225978%2F86%3Fdate%3D26.03.23%26station_evaId%3D45728%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 11\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"21:47\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7013\",\n    \"line\":\"11\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"R\xE5dhuspladsen\",\n    \"direction\"\
+      :\"K\xF8benhavns R\xE5dhusplads\",\n    \"JourneyDetailRef\":{\n      \"ref\"\
+      :\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=715650%2F262013%2F581800%2F52354%2F86%3Fdate%3D26.03.23%26station_evaId%3D7013%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 11\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Enghavevej (Ingerslevsgade)\",\n    \"time\":\"21:48\",\n    \"date\"\
+      :\"26.03.23\",\n    \"id\":\"2057\",\n    \"line\":\"11\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Aved\xF8re St.\",\n    \"direction\":\"Aved\xF8\
+      re St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=72876%2F47700%2F98364%2F24898%2F86%3Fdate%3D26.03.23%26station_evaId%3D2057%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"21:49\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7057\",\n    \"line\":\"1A\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"Hvidovre Hospital, Sl\xF8jfen (Ketteg\xE5\
+      rd All\xE9)\",\n    \"direction\":\"Hvidovre Hospital\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=609999%2F216035%2F690428%2F141888%2F86%3Fdate%3D26.03.23%26station_evaId%3D7057%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 11\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"21:50\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7057\",\n    \"line\":\"11\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"Aved\xF8re St.\",\n    \"direction\"\
+      :\"Aved\xF8re St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=231879%2F100701%2F559420%2F202425%2F86%3Fdate%3D26.03.23%26station_evaId%3D7057%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"21:52\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52830\",\n    \"line\":\"1A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"Hellerup St.\",\n    \"direction\"\
+      :\"Hellerup St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=16035%2F17725%2F673278%2F331299%2F86%3Fdate%3D26.03.23%26station_evaId%3D52830%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 9A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"21:52\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52830\",\n    \"line\":\"9A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"Glostrup St.\",\n    \"direction\"\
+      :\"Glostrup St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=466494%2F175854%2F275410%2F17798%2F86%3Fdate%3D26.03.23%26station_evaId%3D52830%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 23\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"S\xF8nder Boulevard (Enghavevej)\",\n    \"time\":\"21:54\",\n    \"\
+      date\":\"26.03.23\",\n    \"id\":\"45727\",\n    \"line\":\"23\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Klampenborg St. (Dyrehavevej)\",\n    \"direction\"\
+      :\"Klampenborg St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=400371%2F155962%2F112380%2F77270%2F86%3Fdate%3D26.03.23%26station_evaId%3D45727%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 9A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"21:55\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52831\",\n    \"line\":\"9A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"Kgs. Enghave, Valbyparken (Hammelstrupvej)\"\
+      ,\n    \"direction\":\"Kongens Enghave Valbyparken\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=26922%2F29212%2F332364%2F157215%2F86%3Fdate%3D26.03.23%26station_evaId%3D52831%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"S\xF8nder Boulevard (Enghavevej)\",\n    \"time\":\"21:57\",\n    \"\
+      date\":\"26.03.23\",\n    \"id\":\"45728\",\n    \"line\":\"1A\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Aved\xF8re St.\",\n    \"direction\":\"Aved\xF8\
+      re St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=124953%2F54432%2F65712%2F8803%2F86%3Fdate%3D26.03.23%26station_evaId%3D45728%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"21:59\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7057\",\n    \"line\":\"1A\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"Aved\xF8re St.\",\n    \"direction\"\
+      :\"Aved\xF8re St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=232245%2F90196%2F484718%2F164952%2F86%3Fdate%3D26.03.23%26station_evaId%3D7057%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"22:02\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52830\",\n    \"line\":\"1A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"Hellerup St.\",\n    \"direction\"\
+      :\"Hellerup St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=639633%2F225513%2F646382%2F109986%2F86%3Fdate%3D26.03.23%26station_evaId%3D52830%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 9A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"22:02\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52830\",\n    \"line\":\"9A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"R\xF8dovre Centrum (R\xF8dovre Parkvej)\"\
+      ,\n    \"direction\":\"R\xF8dovre Centrum\",\n    \"JourneyDetailRef\":{\n \
+      \     \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=262818%2F108046%2F971906%2F398353%2F86%3Fdate%3D26.03.23%26station_evaId%3D52830%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 9A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vesterf\xE6lledvej)\",\n    \"time\":\"22:05\",\n  \
+      \  \"date\":\"26.03.23\",\n    \"id\":\"52831\",\n    \"line\":\"9A\",\n   \
+      \ \"messages\":\"0\",\n    \"finalStop\":\"Kgs. Enghave, Valbyparken (Hammelstrupvej)\"\
+      ,\n    \"direction\":\"Kongens Enghave Valbyparken\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=362628%2F141209%2F91172%2F75294%2F86%3Fdate%3D26.03.23%26station_evaId%3D52831%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 23\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"S\xF8nder Boulevard (Enghavevej)\",\n    \"time\":\"22:05\",\n    \"\
+      date\":\"26.03.23\",\n    \"id\":\"45728\",\n    \"line\":\"23\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Valby St., Lysh\xF8jg\xE5rdsvej (Lysh\xF8jg\xE5\
+      rdsvej)\",\n    \"direction\":\"Valby St.\",\n    \"JourneyDetailRef\":{\n \
+      \     \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=210069%2F92586%2F552436%2F206198%2F86%3Fdate%3D26.03.23%26station_evaId%3D45728%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"S\xF8nder Boulevard (Enghavevej)\",\n    \"time\":\"22:07\",\n    \"\
+      date\":\"26.03.23\",\n    \"id\":\"45728\",\n    \"line\":\"1A\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Hvidovre Hospital, Sl\xF8jfen (Ketteg\xE5rd All\xE9\
+      )\",\n    \"direction\":\"Hvidovre Hospital\",\n    \"JourneyDetailRef\":{\n\
+      \      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=768039%2F268715%2F65586%2F223228%2F86%3Fdate%3D26.03.23%26station_evaId%3D45728%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 11\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"22:07\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7013\",\n    \"line\":\"11\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"R\xE5dhuspladsen\",\n    \"direction\"\
+      :\"K\xF8benhavns R\xE5dhusplads\",\n    \"JourneyDetailRef\":{\n      \"ref\"\
+      :\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=886830%2F319073%2F325084%2F133073%2F86%3Fdate%3D26.03.23%26station_evaId%3D7013%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 11\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Enghavevej (Ingerslevsgade)\",\n    \"time\":\"22:08\",\n    \"date\"\
+      :\"26.03.23\",\n    \"id\":\"2057\",\n    \"line\":\"11\",\n    \"messages\"\
+      :\"0\",\n    \"finalStop\":\"Aved\xF8re St.\",\n    \"direction\":\"Aved\xF8\
+      re St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=968391%2F346205%2F670750%2F12587%2F86%3Fdate%3D26.03.23%26station_evaId%3D2057%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 1A\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"22:09\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7057\",\n    \"line\":\"1A\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"Hvidovre Hospital, Sl\xF8jfen (Ketteg\xE5\
+      rd All\xE9)\",\n    \"direction\":\"Hvidovre Hospital\",\n    \"JourneyDetailRef\"\
+      :{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=670593%2F236233%2F722084%2F137519%2F86%3Fdate%3D26.03.23%26station_evaId%3D7057%26%26format%3Djson\"\
+      \n      }\n    },{\n    \"name\":\"Bus 11\",\n    \"type\":\"BUS\",\n    \"\
+      stop\":\"Carlsberg St. (Vigerslev All\xE9)\",\n    \"time\":\"22:10\",\n   \
+      \ \"date\":\"26.03.23\",\n    \"id\":\"7057\",\n    \"line\":\"11\",\n    \"\
+      messages\":\"0\",\n    \"finalStop\":\"Aved\xF8re St.\",\n    \"direction\"\
+      :\"Aved\xF8re St.\",\n    \"JourneyDetailRef\":{\n      \"ref\":\"http://webapp.rejseplanen.dk/bin//rest.exe/journeyDetail?ref=74376%2F48200%2F269266%2F109850%2F86%3Fdate%3D26.03.23%26station_evaId%3D7057%26%26format%3Djson\"\
+      \n      }\n    }]\n  }\n}"
+    content_type: text/plain; charset=utf-8
+    method: GET
+    status: 200
+    url: http://xmlopen.rejseplanen.dk/bin/rest.exe/departureBoard?id=8600631&useTog=0&useBus=1&useMetro=1&format=json
