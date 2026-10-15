@@ -1,3 +1,6 @@
+# python-rejseplanen
+Note: This repository has been archived, since it implements the closed API version 1.0
+
 ## Installation
 
 ```pip install rjpl```
